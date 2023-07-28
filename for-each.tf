@@ -47,3 +47,7 @@ resource "aws_instance" "VMka" {
     name = "${each.key}"
 }
 }
+import {
+  to = aws_instance.VMka["t2.large"]
+  id = "i-069cc3545f129f365"
+}
